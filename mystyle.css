@@ -178,17 +178,21 @@ div .nav-list {
 
 
 /* Small phone screen  */
-/* @media screen and (max-width: 345px) {
+@media screen and (max-width: 425px) {
     
-    body {
+    /* body {
         background-color: rebeccapurple;
         min-width: 345px;
+    } */
+
+    .footer-text {
+        margin-left: -20px;
     }
 
-    .logo-ems {
+    /* .logo-ems {
         width: 75px;
-    }
-} */
+    } */
+}
 
 
 
