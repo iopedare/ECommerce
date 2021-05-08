@@ -151,23 +151,29 @@ div .nav-list {
 
 #footer {
     background-color: black;
-    height: 10vh;
+    height: 40px;
     width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#footer-grid {
+    margin-top: 0.5rem;
 }
 
 .footer-img {
     width: 70px;
-    margin-top: 3px;
-    margin-left: 14px;
+    margin-left: 1rem;
+    /* margin-top: 0.625rem; */
+    /* margin-left: 14px; */
 }
 
 .footer-text {
     color: white;
     font-size: .7em;
-    margin-top: 22px;
-    margin-right: 20px;
+    text-align: right;
+    margin-right: 1rem;
+    padding: 0.4rem;
 }
 
 
@@ -260,5 +266,10 @@ div .nav-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
+    }
+
+    .shopBtn {
+        padding: 20px;
+        width: 300px;
     }
 }
