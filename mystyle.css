@@ -178,12 +178,12 @@ div .nav-list {
 
 
 /* Small phone screen  */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
     
-    /* body {
+    body {
         background-color: rebeccapurple;
-        min-width: 345px;
-    } */
+        width: 400px;
+    }
 
     .footer-text {
         margin-left: -40px;
