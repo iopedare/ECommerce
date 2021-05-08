@@ -180,18 +180,13 @@ div .nav-list {
 /* Small phone screen  */
 @media screen and (max-width: 375px) {
     
-    body {
-        background-color: rebeccapurple;
-        width: 400px;
-    }
+    
 
     .footer-text {
         margin-left: -40px;
     }
 
-    /* .logo-ems {
-        width: 75px;
-    } */
+   
 }
 
 
