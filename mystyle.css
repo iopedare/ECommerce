@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#intro {
+    background-color: #ffe9d6; 
+}
+
+#main-navigation {
+    display: flex;
+    padding: 0.625rem;
+    justify-content: space-between;
+}
+
+#main-navigation a {
+    text-decoration: none;
+    
+}
+
+div .nav-list {
+    margin-top: 0.375rem;
+}
+
+
+#main-navigation a.anchor-navList {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: black;
+    align-self: center;
+}
+
+
+.logo-ems {
+    width: 80px;
+}
+
+#shopping-cart {
+    background-color: #ff9a3d;
+    border-radius: 40%;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    padding: 0.125rem 0;
+    
+}
+
+.cart-img {
+    margin-top: 0.375rem;
+    display: block;
+    margin-left: 1rem;
+    width: 18px;
+}
+
+.cart-num {
+    display: block;
+    margin-top: -1.375rem;
+    margin-left: 1.375rem;
+    font-size: 1.3em;
+    color: white;
+}
+
+.shopBtn {
+    display: inline-block;
+    background-color: #ff9a3d;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 200px;
+    padding: 0.375rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.75rem;
+
+}
+
+.heading-1 {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 3em;
+    color: #ff9a3d;
+
+    text-transform: uppercase;
+    padding: 0.3125rem;
+}
+
+
+.hero-img {
+    width: 250px;
+}
+
+
+#about {
+    background-color: black;
+    padding: 20px;
+}
+
+.about-text {
+    color: white;
+    font-size: .75em;
+    line-height: 1.5;
+    height: auto;
+
+}
+
+#gadget {
+    padding: 20px;
+}
+
+.product-img {
+    width: 240px;
+    margin-top: 1.2rem;
+}
+
+#heading-2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.addCart {
+    display: inline-block;
+    background-color: #ff9a3d;
+    color: black;
+    font-size: .75em;
+    font-weight: bold;
+    width: 200px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+}
+
+#footer {
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.footer-img {
+    width: 70px;
+    margin-top: 3px;
+    margin-left: 14px;
+}
+
+.footer-text {
+    color: white;
+    font-size: .7em;
+    margin-top: 22px;
+    margin-right: 20px;
+}
+
+
+/* Small phone screen  */
+/* @media screen and (max-width: 345px) {
+    
+    body {
+        background-color: rebeccapurple;
+        min-width: 345px;
+    }
+
+    .logo-ems {
+        width: 75px;
+    }
+} */
+
+
+
+/* Tablet View  */
+@media screen and (min-width: 600px) {
+    
+    
+
+    .logo-ems {
+        width: 120px;
+    }
+
+   
+
+    #shopping-cart {
+        height: 35px;
+    }
+
+    #heroImage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading-1 {
+        text-align: left;
+        width: 200px;
+        font-size: 2.5em;
+        margin-top: 3.5rem;
+
+    }
+
+    .shopBtn {
+        margin-top: 1rem;
+    }
+
+    .about-text {
+        font-size: 1em;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gadget-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+
+
+/* Desktop View  */
+@media screen and (min-width: 769px) {
+    
+    body {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heading-1 {
+        font-size: 3em;
+        margin-top: 4rem;
+    }
+
+    .hero-img {
+        width: 350px;
+    }
+
+    .about-text {
+        font-size: 1.2em;
+    }
+
+    #gadget-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
