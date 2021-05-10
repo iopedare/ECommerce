@@ -4,102 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="E-commerce for gadgets and electronics, buying and selling">
-    <meta name="author" content="Dayo Opedare">
-    <title>E-Commerce</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./mystyle.css">
 </head>
 <body>
 
     <div id="wrapper">
 
-        <div id="intro">
-            <nav id="main-navigation">
-                <a class="navbar" href="" id="brand-img">
-                    <img src="./images/EMS.svg" class="logo-ems" alt="" >
-                </a>
-                <div class="nav-list navbar">
-                    <a class="anchor-navList" href="">Intro</a>
-                    <a class="anchor-navList" href="">About</a>
-                    <a class="anchor-navList" href="">Shop</a>
-                </div>
-                <a href="" id="shopping-cart" class="shopping-cart navbar">
-                    <img class="cart-img" src="./images/cart.svg" alt="cart-image">
-                    <span class="cart-num">0</span>
-                </a>
+        <header id="header">
+            <nav class="navbar">
+                <div class="logo-div"><a href=""><img src="./images/EMS.svg" alt="" class="logo-img"></a></div>
+                <ul class="nav__links">
+                    <li class="list-item"><a href="#header">Intro</a></li>
+                    <li class="list-item"><a href="#about">About</a></li>
+                    <li class="list-item"><a href="#gadgets">Shop</a></li>
+                </ul>
+                <div class="cart-div"><a href="" class="cta"><img src="./images/cart.svg" alt="" class="cart-img"/><span>0</span></a></div>
             </nav>
-
+    
             <div id="heroImage">
-                <h1 class="hero-one heading-1">The E-Millenial Store</h1>
-                <img class="hero-one hero-img" src="./images/heroImage.png" alt="" sizes="100x32">
+                <div id="hero-text__div">
+                    <p class="hero-text">The E-Millenial Store</p>
+                </div>
+    
+                <div id="hero-img__div">
+                    <img src="./images/heroImage.svg" alt="" class="hero-img" width="100%">
+                </div>
             </div>
-            <a href="" class="shopBtn">Shop now</a>
+    
+            <div id="shopBtn">
+                <a class="shop-now" href="#gadgets">Shop Now</a>
+            </div>   
+            
             <br>
-
-        </div>
-
+        </header>
+    
         <div id="about">
             <p class="about-text">
                 E-Millenial Store is an hypothetical online store for gadgets that we believe
                 every 'Millenial' or 'Gen-Z' should have today. We've got mobile phones, laptops,
                 smartwatches and other gadgets. Explore all our gadgets and choose the ones
                 that suit you.
-                
             </p>
         </div>
-
-        <section id="gadget">
-            <h1 id="heading-2">Our gadgets</h1>
-            <div id="gadget-card">
-                <div id="gadget-products">
-                    <img class="product-img" src="./images/product1.png" alt="">
-                    <h3 id="description">SAMSUNG TV</h3>
-                    <a href="" class="addCart">Add to cart</a>
+    
+        <section id="gadgets">
+            <div class="gadget-heading">Our Gadgets</div>
+            <div id="gadget-product">
+                <div class="gadget-card">
+                    <div class="gadget-image">
+                        <img class="image__img" src="./images/product1.png" alt="Samsung TV">
+                        <div class="image__overlay">
+                            <div class="image__title">Price</div>
+                            <p class="image__description">
+                                500,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gadget-shop">
+                        <h2 class="gadget-name">Samsung TV</h2>
+                        <a class="addToCart" href="">Add to cart</a>
+                    </div>
                 </div>
-
-                <div id="gadget-products">
-                    <img class="product-img" src="./images/product2.png" alt="">
-                    <h3 id="description">PIXEL 4a</h3>
-                    <a href="" class="addCart">Add to cart</a>
+    
+                <div class="gadget-card">
+                    <div class="gadget-image">
+                        <img class="image__img" src="./images/product2.png" alt="PIXEL 4a">
+                        <div class="image__overlay">
+                            <div class="image__title">Price</div>
+                            <p class="image__description">
+                                250,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gadget-shop">
+                        <h2 class="gadget-name">PIXEL 4a</h2>
+                        <a class="addToCart" href="">Add to cart</a>
+                    </div>
                 </div>
-
-                <div id="gadget-products">
-                    <img class="product-img" src="./images/product3.png" alt="">
-                    <h3 id="description">PS 5</h3>
-                    <a href="" class="addCart">Add to cart</a>
+    
+                <div class="gadget-card">
+                    <div class="gadget-image">
+                        <img class="image__img" src="./images/product1.png" alt="Sony PS5">
+                        <div class="image__overlay">
+                            <div class="image__title">Price</div>
+                            <p class="image__description">
+                                300,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gadget-shop">
+                        <h2 class="gadget-name">PS 5</h2>
+                        <a class="addToCart" href="">Add to cart</a>
+                    </div>
                 </div>
-
-                <div id="gadget-products">
-                    <img class="product-img" src="./images/product4.png" alt="">
-                    <h3 id="description">MACBOOK AIR</h3>
-                    <a href="" class="addCart">Add to cart</a>
+    
+                <div class="gadget-card">
+                    <div class="gadget-image">
+                        <img class="image__img" src="./images/product1.png" alt="MacBook Air">
+                        <div class="image__overlay">
+                            <div class="image__title">Price</div>
+                            <p class="image__description">
+                                800,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gadget-shop">
+                        <h2 class="gadget-name">MACBOOK AIR</h2>
+                        <a class="addToCart" href="">Add to cart</a>
+                    </div>
                 </div>
-
-                <div id="gadget-products">
-                    <img class="product-img" src="./images/product5.png" alt="">
-                    <h3 id="description">APPLE WATCH</h3>
-                    <a href="" class="addCart">Add to cart</a>
+    
+                <div class="gadget-card">
+                    <div class="gadget-image">
+                        <img class="image__img" src="./images/product1.png" alt="Apple Watch">
+                        <div class="image__overlay">
+                            <div class="image__title">Price</div>
+                            <p class="image__description">
+                                95,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gadget-shop">
+                        <h2 class="gadget-name">APPLE WATCH</h2>
+                        <a class="addToCart" href="">Add to cart</a>
+                    </div>
                 </div>
-
-                <div id="gadget-products">
-                    <img class="product-img" src="./images/product6.png" alt="">
-                    <h3 id="description">AIR PODS</h3>
-                    <a href="" class="addCart">Add to cart</a>
+    
+                <div class="gadget-card">
+                    <div class="gadget-image">
+                        <img class="image__img" src="./images/product1.png" alt="Airpod">
+                        <div class="image__overlay">
+                            <div class="image__title">Price</div>
+                            <p class="image__description">
+                                80,000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gadget-shop">
+                        <h2 class="gadget-name">AIRPODS</h2>
+                        <a class="addToCart" href="">Add to cart</a>
+                    </div>
                 </div>
-
             </div>
         </section>
-
+    
         <footer id="footer">
-            <img id="footer-grid" class="footer-img" src="./images/EMS.svg" alt="">
-            <p id="footer-grid" class="footer-text">Designed and Crafted by Dayo Opedare</p>
+            <div><img src="./images/EMS.svg" alt="" class="footer-img"></div>
+            <div class="footer-text">
+                <p>Designed and Crafted by Dayo Opedare</p>
+            </div>
         </footer>
-
 
     </div>
     
-    
-    <script src="https://js.paystack.co/v1/inline.js"></script>
-    <script src="./script.js"></script>
 </body>
 </html>
