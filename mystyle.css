@@ -266,8 +266,7 @@ body {
 
 /* Tablet screen size  */
 @media only screen 
-and (min-device-width: 680px)
-and (-webkit-min-device-pixel-ratio: 1) {
+and (min-width: 680px) {
     .logo-img {
         height: 40px;
     }
@@ -336,9 +335,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 /* Laptop Screen Size  */
 @media screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+  and (min-width: 1024px) 
+  and (max-width: 1600px) { 
     body {
         max-width: 1024px;
         margin-left: auto;
@@ -365,4 +363,4 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .footer-text {
         font-size: 1em;
     }
-}
+} 
