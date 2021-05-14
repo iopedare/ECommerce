@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -11,40 +11,46 @@ html {
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #wrapper {
+    border: 3px solid #ccc;
     height: 100%;
     width: 100%;
-    border: 1px solid #ccc;
 }
 
 #header {
-    background: #ffe9d6;
+    background-color: #ffe9d6;
 }
 
 .navbar {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 2;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 7px;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 12px;
 }
 
-.nav__links {
-    list-style-type: none;
-}
-
-.nav__links .list-item {
+.navbar .list-item {
+    font-size: 1.1em;
+    list-style: none;
     display: inline-block;
-    margin: 0px 7px;
 }
 
 .list-item a {
-    text-decoration: none;
+    padding: 5px;
     color: black;
-    font-size: .8em;
-    font-weight: 600;
+    text-decoration: none;
 }
 
 .logo-img {
@@ -53,14 +59,13 @@ body {
 
 .cart-img {
     height: 20px;
-    margin-right: 3px;
 }
 
 .cta {
     display: flex;
     background-color: rgba(255, 122, 0, 0.8);
     padding: 5px 12px;
-    border-radius: 50px;
+    border-radius: 40%;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     text-decoration: none;
@@ -68,61 +73,72 @@ body {
 
 .cta span {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 500;
     margin-left: 3px;
 }
 
-#heroImage {
+.heroImage {
+    position: relative;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 12px;
 }
 
 #hero-text__div {
-    height: 165px;
-    width: 75%;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
 }
 
 .hero-text {
-    font-size: 2.5em;
-    font-weight: 700;
+    font-size: 3em;
     color: #ff7a00;
-    text-transform: uppercase;
     text-align: center;
-    padding: 10px;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+#hero-img__div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 #shopBtn a {
     display: block;
-    background: #ff9a3d;
+    background-color: #ff9a3d;
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
+    border-radius: 20px;
 }
 
-.shop-now {
-    font-size: 1.2em;
+#shopBtn .shop-now {
+    font-size: 1.4em;
     font-weight: 600;
+    text-transform: uppercase;
     color: white;
     padding: 10px;
-    border-radius: 14px;
-    text-transform: uppercase;
 }
 
 #about {
-    background: black;
+    background-color: black;
+    height: 100%;
+    width: 100%;
 }
 
-.about-text {
-    font-size: 1.2em;
+#about .about-text {
     color: white;
+    font-size: 1.3em;
     text-align: center;
+    line-height: 1.4;
     padding: 20px;
-    line-height: 1.3;
 }
 
 #gadgets {
@@ -130,7 +146,7 @@ body {
     flex-direction: column;
 }
 
-.gadget-heading {
+#gadgets .gadget-heading {
     font-size: 1.5em;
     font-weight: 700;
     text-align: center;
@@ -148,13 +164,12 @@ body {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 16px;
 }
 
 .image__img {
     display: block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .image__overlay {
@@ -163,7 +178,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     flex-direction: column;
@@ -171,7 +186,7 @@ body {
     justify-content: center;
     opacity: 0;
     transition: 0.25ms;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .image__overlay > * {
@@ -200,45 +215,47 @@ body {
 
 .gadget-shop {
     text-align: center;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
-.gadget-name {
+.gadget-shop .gadget-name {
     margin-top: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .gadget-shop a {
     display: block;
-    background: #ff7a00;
-    text-align: center;
+    background-color: #ff7a00;
     width: 80%;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 18px;
     text-decoration: none;
 }
 
-.addToCart {
-    font-size: 1em;
+.gadget-shop a.addToCart {
+    font-size: 1.2em;
     font-weight: 600;
     color: black;
-    padding: 10px;
-    border-radius: 14px;
+    padding: 9px;
+    border-radius: 20px;
     text-transform: uppercase;
 }
 
 #footer {
     display: flex;
-    background: black;
+    border: 3px solid #ccc;
+    background-color: black;
+    height: 50px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
-    /* height: 50px; */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.footer-img {
-    height: 30px;
+#footer img {
+    height: 25px;
 }
 
 .footer-text {
@@ -246,45 +263,37 @@ body {
     color: white;
 }
 
-/* Screen sizes 500px and up  */
-@media (min-width: 530px) {
-    #wrapper {
-        width: 100%;
-    }
 
+/* Tablet screen size  */
+@media only screen 
+and (min-device-width: 680px)
+and (-webkit-min-device-pixel-ratio: 1) {
     .logo-img {
         height: 40px;
     }
 
     .cart-img {
         height: 30px;
-        margin-right: 16px;
     }
 
     .cta span {
-        font-size: 1.5em;
+        font-size: 1.7em;
+        margin-left: 4px;
     }
 
-    .list-item a {
-        font-size: 1em;
+    .navbar .list-item {
+        font-size: 1.3em;
     }
 
-    #heroImage {
+    .heroImage {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #hero-text__div {
-        margin-top: 30px;
-    }
-
     .hero-text {
-        font-size: 2.5em;
+        font-size: 4em;
         text-align: left;
-    }
-
-    .hero-img {
-        width: 100%;
+        margin-top: 40px;
     }
 
     #shopBtn a {
@@ -293,110 +302,64 @@ body {
 
     #gadget-product {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gadget-card {
-        width: 80%;
-    }
-
-}
-
-/* Screen sizes 580px and up  */
-@media (min-width: 580px) {
-    .hero-text {
-        font-size: 2.8em;
-        line-height: 1.3;
-    } 
-}
-
-/* Screen sizes 680px and up  */
-@media (min-width: 680px) {
-    .hero-text {
-        font-size: 3.2em;
-    }
-}
-
-/* Screen sizes 730px and up  */
-@media (min-width: 730px) {
-    .hero-text {
-        font-size: 3.5em;
-        line-height: 1.4;
-    }
-
-    .footer-img {
-        height: 35px;
-    }
-
-    .footer-text {
-        font-size: .85em;
-    }
-}
-
-/* Screen sizes 800px and up  */
-@media (min-width: 800px) {
-    .logo-img {
-        height: 100%;
-    }
-
-    .cart-img {
-        height: 40px;
-        margin-right: 16px;
-    }
-
-    .cta span {
-        font-size: 2em;
-    }
-
-    .list-item a {
-        font-size: 1.5em;
-    }
-
-    #hero-text__div {
-        margin-top: 20px;
-    }
-
-    .hero-text {
-        font-size: 4em;
-        line-height: 1.7;
-    }
-
-    #shopBtn a {
-        width: 30%;
-    }
-
-    .shop-now {
-        padding: 15px;
-    }
-
-    #gadget-product {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .gadget-card {
-        width: 80%;
+    
+    .gadget-shop a.addToCart {
+        font-size: .75em;
     }
 
-    .footer-img {
-        height: 40px;
+    .gadget-name {
+        font-size: 1.2em;
+    }
+
+    @media screen and (min-width: 680px) and (max-width: 780px) {
+        .gadget-name {
+            font-size: 1em;
+        }
+    }
+
+    #footer {
+        height: 60px;
+    }
+
+    #footer img {
+        height: 30px;
     }
 
     .footer-text {
-        font-size: 1em;
+        font-size: .8em;
     }
 }
 
-/* Screen sizes 960px and up  */
-@media (min-width: 960px) {
-    #wrapper {
-        width: 1024px;
-    }
-    .gadget-card {
-        width: 70%;
+
+
+/* Laptop Screen Size  */
+@media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .footer-img {
-        height: 50px;
+    .hero-text {
+        font-size: 5em;
+        margin-top: 40px;
+    }
+
+    .gadget-shop a.addToCart {
+        font-size: .9em;
+    }
+
+    #footer {
+        height: 70px;
+    }
+
+    #footer img {
+        height: 40px;
     }
 
     .footer-text {
